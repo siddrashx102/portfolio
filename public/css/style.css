@@ -93,6 +93,6 @@ html {
 }
 
 /* Fix navbar covering content */
-html {
-    scroll-padding-top: 70px; /* Height of your fixed navbar */
-} 
+/* html { */
+/*     scroll-padding-top: 70px; /* Height of your fixed navbar */ */
+/* }  */
