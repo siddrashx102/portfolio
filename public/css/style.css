@@ -92,14 +92,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Offset for fixed navbar */
-@media (min-width: 992px) {
-    section {
-        scroll-margin-top: 70px; /* Adjust based on your navbar height */
-    }
-} 
-
-
 /* Fix navbar covering content */
 html {
     scroll-padding-top: 70px; /* Height of your fixed navbar */
