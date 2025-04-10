@@ -1,0 +1,106 @@
+.hero {
+    padding: 7rem 0;
+}
+
+.project-card {
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-badge {
+    font-size: 1.1rem;
+    margin: 0.3rem;
+}
+
+/* Add to public/css/style.css */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.skill-badges .badge {
+    transition: all 0.3s ease;
+}
+
+.skill-badges .badge:hover {
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.service-card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: -45px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.timeline-panel {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Blog Section */
+.blog-post {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Add this to your style.css */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for fixed navbar */
+@media (min-width: 992px) {
+    section {
+        scroll-margin-top: 70px; /* Adjust based on your navbar height */
+    }
+} 
+
+
+/* Fix navbar covering content */
+html {
+    scroll-padding-top: 70px; /* Height of your fixed navbar */
+} 
