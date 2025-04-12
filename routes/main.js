@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const Contact = require('../models/Contact');
 const { sendWhatsApp } = require('../services/whatsappService');
 
 router.get('/', (req, res) => {

@@ -1,0 +1,35 @@
+<section id="contact" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center m-4">Get In Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <% if (success=='true' ) { %>
+                    <div class="alert alert-success">Message sent successfully!</div>
+                    <% } else if (success=='false' ) { %>
+                        <div class="alert alert-danger">Error sending message. Please try again.</div>
+                        <% } %>
+                            <form action="/contact" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4"
+                                        required></textarea>
+                                </div>
+                                <div id="liveAlertPlaceholder"></div>
+                                <!-- <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live
+                                    alert</button> -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn" id="liveAlertBtn">Send Message</button>
+                                </div>
+                            </form>
+            </div>
+        </div>
+    </div>
+</section>
