@@ -1,34 +1,86 @@
-<section id="contact" class="py-5 bg-white">
+<!-- Contact Section -->
+<section id="contact" class="py-5">
     <div class="container">
-        <h2 class="text-center m-4">Get In Touch</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <% if (success=='true' ) { %>
-                    <div class="alert alert-success">Message sent successfully!</div>
-                    <% } else if (success=='false' ) { %>
-                        <div class="alert alert-danger">Error sending message. Please try again.</div>
-                        <% } %>
-                            <form action="/contact" method="POST">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
+        <h2 class="text-center mb-5">Get In Touch</h2>
+        <div class="row g-4">
+            <!-- Let's Talk Section (Left) -->
+            <div class="col-md-6 order-md-1">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Let's Bring Your Vision to Life</h2>
+                        <p class="lead text-muted mb-4">Collaborate | Create | Deliver</p>
+
+                        <p class="mb-4">
+                            Share your project requirements, and let's explore how we can transform your ideas into
+                            digital reality.
+                            Whether you're in the early concept phase or ready to build, I'll help you:
+                        </p>
+
+                        <div class="feature-list mb-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="feature-icon me-3">🚀</span>
+                                <div>
+                                    <h5 class="mb-0">Define project scope</h5>
+                                    <small class="text-muted">With a free 30-min consultation</small>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="feature-icon me-3">💡</span>
+                                <div>
+                                    <h5 class="mb-0">Receive tailored proposal</h5>
+                                    <small class="text-muted">Within 24 hours</small>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" name="message" rows="4"
-                                        required></textarea>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="feature-icon me-3">🤝</span>
+                                <div>
+                                    <h5 class="mb-0">Collaborate seamlessly</h5>
+                                    <small class="text-muted">Through development process</small>
                                 </div>
-                                <div id="liveAlertPlaceholder"></div>
-                                <!-- <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live
-                                    alert</button> -->
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary btn" id="liveAlertBtn">Send Message</button>
-                                </div>
-                            </form>
+                            </div>
+                        </div>
+
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/918445468881?text=Hi%20Rashid%2C%20I%20had%20looked%20into%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20web%20or%20app%20development%20project.%20Could%20we%20schedule%20a%20call%20to%20review%20requirements%20and%20get%20a%20quote%3F"
+                                class="btn btn-success w-100 mb-3" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp
+                            </a>
+
+                            <a href="mailto:siddrashid1998@outlook.com" class="btn btn-outline-secondary w-100">
+                                <i class="fas fa-envelope me-2"></i>Send Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contact Form (Right) -->
+            <div class="col-md-6 order-md-2">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <form id="contactForm">
+                            <!-- Your existing form fields -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

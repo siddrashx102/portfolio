@@ -1,3 +1,8 @@
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    background-attachment: fixed;
+}
+
 .hero {
     padding: 7rem 0;
 }
@@ -22,7 +27,7 @@
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skill-badges .badge {
@@ -37,7 +42,7 @@
 .service-card {
     transition: transform 0.3s;
     border: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-card:hover {
@@ -69,7 +74,7 @@
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Blog Section */
@@ -94,5 +99,6 @@ html {
 
 /* Fix navbar covering content */
 /* html { */
-/*     scroll-padding-top: 70px; /* Height of your fixed navbar */ */
+/*     scroll-padding-top: 70px; /* Height of your fixed navbar */
+*/
 /* }  */
