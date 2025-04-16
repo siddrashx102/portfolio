@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { sendWhatsApp } = require('../services/whatsappService');
+const Contact = require('../models/Contact');
 
 router.get('/', (req, res) => {
     res.render('index', {
@@ -10,7 +11,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/contact', async (req, res) => {
-    
     try {
         const newContact = new Contact({
             name: req.body.name,
@@ -19,6 +19,7 @@ router.post('/contact', async (req, res) => {
         });
         // await newContact.save();
         // Send WhatsApp
+        // console.log("Sending WhatsApp message...");
         const whatsappSent = await sendWhatsApp(newContact.name, newContact.email, newContact.message);
 
         if (whatsappSent) {

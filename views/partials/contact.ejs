@@ -61,19 +61,19 @@
             <div class="col-md-6 order-md-2">
                 <div class="card h-100 shadow">
                     <div class="card-body">
-                        <form id="contactForm">
+                        <form action="/contact" method="post" id="contactForm">
                             <!-- Your existing form fields -->
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input name="name" type="text" class="form-control" id="name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input name="email" type="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                                <textarea name="message" class="form-control" id="message" rows="4" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-success w-100">
                                 Let's Talk!
