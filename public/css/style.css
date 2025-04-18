@@ -8,9 +8,9 @@ body {
     /* background-image: url("../images/bg-cover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    height: 70vh;
-    display: flex;
+    position: relative;*/
+    height: 50vh;
+    /*display: flex;
     align-items: center; */
 }
 
@@ -107,5 +107,5 @@ html {
 /* Fix navbar covering content */
 /* html { */
 /*     scroll-padding-top: 70px; /* Height of your fixed navbar */
-*/
+
 /* }  */
