@@ -5,6 +5,13 @@ body {
 
 .hero {
     padding: 7rem 0;
+    /* background-image: url("../images/bg-cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center; */
 }
 
 .project-card {
